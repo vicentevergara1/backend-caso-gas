@@ -1,9 +1,13 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.services;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import cl.duoc.gaselvolcan.ApiModels;
+import cl.duoc.gaselvolcan.OrderEntity;
+import cl.duoc.gaselvolcan.OrderLine;
+import cl.duoc.gaselvolcan.UserAccount;
 import cl.duoc.gaselvolcan.model.Product;
 import cl.duoc.gaselvolcan.repository.OrderRepository;
 import cl.duoc.gaselvolcan.repository.ProductRepository;

@@ -1,5 +1,6 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.config;
 
+import cl.duoc.gaselvolcan.UserAccount;
 import cl.duoc.gaselvolcan.repository.UserRepository;
 import com.nimbusds.jose.jwk.source.ImmutableSecret;
 import javax.crypto.SecretKey;
