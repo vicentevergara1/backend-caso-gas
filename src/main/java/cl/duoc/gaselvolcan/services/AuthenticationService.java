@@ -1,4 +1,10 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.services;
+
+import cl.duoc.gaselvolcan.dto.ApiModels;
+import cl.duoc.gaselvolcan.model.RefreshSession;
+import cl.duoc.gaselvolcan.model.UserAccount;
+import cl.duoc.gaselvolcan.repository.RefreshSessionRepository;
+import cl.duoc.gaselvolcan.repository.UserRepository;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -9,9 +15,6 @@ import java.time.Instant;
 import java.util.Base64;
 import java.util.HexFormat;
 import java.util.List;
-
-import cl.duoc.gaselvolcan.repository.RefreshSessionRepository;
-import cl.duoc.gaselvolcan.repository.UserRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;

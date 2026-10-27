@@ -1,6 +1,7 @@
 package cl.duoc.gaselvolcan.repository;
 
-import cl.duoc.gaselvolcan.UserAccount;
+import cl.duoc.gaselvolcan.model.UserAccount;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

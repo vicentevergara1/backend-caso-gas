@@ -1,4 +1,6 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.exception;
+
+import cl.duoc.gaselvolcan.dto.ApiModels;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

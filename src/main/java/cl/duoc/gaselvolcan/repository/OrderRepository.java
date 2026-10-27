@@ -1,6 +1,7 @@
 package cl.duoc.gaselvolcan.repository;
 
-import cl.duoc.gaselvolcan.OrderEntity;
+import cl.duoc.gaselvolcan.model.OrderEntity;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 

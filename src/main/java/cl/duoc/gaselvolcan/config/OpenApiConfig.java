@@ -1,4 +1,4 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

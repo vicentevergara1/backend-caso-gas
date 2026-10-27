@@ -1,9 +1,9 @@
 package cl.duoc.gaselvolcan.controller;
 
-import java.util.List;
-
-import cl.duoc.gaselvolcan.ApiModels;
+import cl.duoc.gaselvolcan.dto.ApiModels;
 import cl.duoc.gaselvolcan.repository.UserRepository;
+
+import java.util.List;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.web.bind.annotation.*;
 

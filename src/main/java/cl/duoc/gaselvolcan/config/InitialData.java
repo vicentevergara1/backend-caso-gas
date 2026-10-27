@@ -1,15 +1,16 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.config;
+
+import cl.duoc.gaselvolcan.model.Category;
+import cl.duoc.gaselvolcan.model.Product;
+import cl.duoc.gaselvolcan.model.UserAccount;
+import cl.duoc.gaselvolcan.repository.CategoryRepository;
+import cl.duoc.gaselvolcan.repository.ProductRepository;
+import cl.duoc.gaselvolcan.repository.UserRepository;
 
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
-import cl.duoc.gaselvolcan.model.Category;
-import cl.duoc.gaselvolcan.model.Product;
-import cl.duoc.gaselvolcan.repository.CategoryRepository;
-import cl.duoc.gaselvolcan.repository.ProductRepository;
-import cl.duoc.gaselvolcan.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;

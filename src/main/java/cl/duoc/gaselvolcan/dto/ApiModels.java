@@ -1,6 +1,9 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.dto;
 
+import cl.duoc.gaselvolcan.model.OrderEntity;
 import cl.duoc.gaselvolcan.model.Product;
+import cl.duoc.gaselvolcan.model.UserAccount;
+
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import java.time.Instant;
@@ -18,6 +21,7 @@ public final class ApiModels {
         }
     }
     public record AuthResponse(String accessToken, UserView user) {}
+    public record CategoryView(Long id, String name, String slug) {}
     public record ProductRequest(@NotBlank String name, @NotBlank String category,
                                  @NotNull @Min(1) Integer price, @NotBlank String image,
                                  @NotBlank String description, Boolean featured,

@@ -1,13 +1,13 @@
 package cl.duoc.gaselvolcan.services;
 
-import java.util.List;
-import java.util.UUID;
-
-import cl.duoc.gaselvolcan.ApiModels;
+import cl.duoc.gaselvolcan.dto.ApiModels;
 import cl.duoc.gaselvolcan.model.Category;
 import cl.duoc.gaselvolcan.model.Product;
 import cl.duoc.gaselvolcan.repository.CategoryRepository;
 import cl.duoc.gaselvolcan.repository.ProductRepository;
+
+import java.util.List;
+import java.util.UUID;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

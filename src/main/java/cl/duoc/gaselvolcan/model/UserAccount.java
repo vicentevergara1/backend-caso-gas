@@ -1,4 +1,4 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.model;
 
 import jakarta.persistence.*;
 

@@ -1,4 +1,4 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.model;
 
 import jakarta.persistence.*;
 import java.time.Instant;
@@ -21,5 +21,5 @@ public class OrderEntity {
     @Column(nullable = false) public int total;
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
     public List<OrderLine> items = new ArrayList<>();
-    protected OrderEntity() {}
+    public OrderEntity() {}
 }

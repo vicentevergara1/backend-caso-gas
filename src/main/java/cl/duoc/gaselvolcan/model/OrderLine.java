@@ -1,6 +1,5 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.model;
 
-import cl.duoc.gaselvolcan.model.Product;
 import jakarta.persistence.*;
 
 @Entity

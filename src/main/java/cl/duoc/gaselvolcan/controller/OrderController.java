@@ -1,7 +1,8 @@
 package cl.duoc.gaselvolcan.controller;
 
-import cl.duoc.gaselvolcan.ApiModels;
+import cl.duoc.gaselvolcan.dto.ApiModels;
 import cl.duoc.gaselvolcan.services.OrderService;
+
 import jakarta.validation.Valid;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import java.util.List;
