@@ -1,5 +1,6 @@
 package cl.duoc.gaselvolcan;
 
+import cl.duoc.gaselvolcan.model.Product;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import java.time.Instant;

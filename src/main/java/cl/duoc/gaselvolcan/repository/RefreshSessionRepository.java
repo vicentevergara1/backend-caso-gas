@@ -1,5 +1,6 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.repository;
 
+import cl.duoc.gaselvolcan.RefreshSession;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

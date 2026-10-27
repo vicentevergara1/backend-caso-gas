@@ -1,5 +1,9 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.controller;
 
+import cl.duoc.gaselvolcan.ApiModels;
+import cl.duoc.gaselvolcan.AuthenticationService;
+import cl.duoc.gaselvolcan.UserAccount;
+import cl.duoc.gaselvolcan.repository.UserRepository;
 import jakarta.validation.Valid;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,5 +1,6 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.repository;
 
+import cl.duoc.gaselvolcan.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Query;

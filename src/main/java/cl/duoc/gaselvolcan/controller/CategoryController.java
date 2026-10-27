@@ -1,6 +1,8 @@
-package cl.duoc.gaselvolcan;
+package cl.duoc.gaselvolcan.controller;
 
 import java.util.List;
+
+import cl.duoc.gaselvolcan.repository.CategoryRepository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
