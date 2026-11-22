@@ -133,3 +133,7 @@ Este ZIP contiene **solo el backend**. `pom.xml`, `src/`, `.gitignore` y `README
 5. Usa el enlace público de este repositorio como **enlace del backend** en la entrega. Tu repositorio React sigue siendo independiente.
 
 Si lo subes a un servicio de hosting, define allí las variables de entorno y configura `FRONTEND_ORIGIN` con el origen exacto de tu web. GitHub Pages aloja el frontend, pero no ejecuta una aplicación Java Spring Boot.
+
+## Diagnóstico de publicación (noviembre 2026)
+
+El fallo original de GitHub Pages se relaciona con una URL de API anterior compilada en Vite, no con un error demostrado de Spring Boot. Se añadieron pruebas automáticas de categorías y CORS, sin modificar la lógica productiva. Consulta `docs/DIAGNOSTICO_EC2_HTTPS.md` antes de actualizar un servicio en EC2. El backend requiere redeploy explícito para usar un nuevo JAR; un push a GitHub no actualiza por sí solo el proceso Java instalado en AWS.

@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import static org.hamcrest.Matchers.greaterThan;
 import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -34,4 +35,29 @@ class ApiIntegrationTest {
             .contentType(MediaType.APPLICATION_JSON).content("{}"))
             .andExpect(status().isForbidden());
     }
+
+    @Test void publicCategoriesAreAvailable() throws Exception {
+        http.perform(get("/api/v1/categories"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.length()", greaterThan(0)));
+    }
+
+    @Test void catalogGetAllowsConfiguredCorsOrigin() throws Exception {
+        http.perform(get("/api/v1/products")
+                .header("Origin", "http://localhost:5173"))
+            .andExpect(status().isOk())
+            .andExpect(header().string("Access-Control-Allow-Origin", "http://localhost:5173"))
+            .andExpect(header().string("Access-Control-Allow-Credentials", "true"));
+    }
+
+    @Test void catalogPreflightAllowsAuthorizationHeader() throws Exception {
+        http.perform(options("/api/v1/products")
+                .header("Origin", "http://localhost:5173")
+                .header("Access-Control-Request-Method", "GET")
+                .header("Access-Control-Request-Headers", "authorization,content-type"))
+            .andExpect(status().isOk())
+            .andExpect(header().string("Access-Control-Allow-Origin", "http://localhost:5173"))
+            .andExpect(header().string("Access-Control-Allow-Credentials", "true"));
+    }
+
 }
